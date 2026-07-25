@@ -1,0 +1,5 @@
+EXEC fb.usp_save_feedback
+  @IDN = {{ Table1.selectedRow.IDN }},
+  @ServiceDate = {{ Table1.selectedRow.ServiceDate }},
+  @Disposition = {{ this.params.disposition }},
+  @ReviewerName = {{ appsmith.user.email }};

@@ -1,0 +1,5 @@
+SELECT Tier, Points, StoreCode, OutletCity, ReceiptNo, CaptainName,
+       TrustBand, WhySummary, AISummary, IDN, ServiceDate
+FROM score.vw_investigation_queue
+WHERE ServiceDate = (SELECT MAX(ServiceDate) FROM score.[transaction])
+ORDER BY TierNum, Points DESC;
