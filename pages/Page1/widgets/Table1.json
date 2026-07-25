@@ -46,7 +46,7 @@
   ],
   "columnUpdatedAt": 1784971044405,
   "columnWidthMap": {},
-  "compactMode": "SHORT",
+  "compactMode": "DEFAULT",
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
@@ -100,6 +100,12 @@
     },
     {
       "key": "primaryColumns.ServiceDate.computedValue"
+    },
+    {
+      "key": "primaryColumns.Tier.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Tier.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -147,13 +153,13 @@
       "id": "AISummary",
       "index": 8,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": false,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "AISummary",
       "notation": "standard",
       "originalId": "AISummary",
@@ -185,7 +191,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "CaptainName",
+      "label": "Captain",
       "notation": "standard",
       "originalId": "CaptainName",
       "sticky": "",
@@ -193,7 +199,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 190
     },
     "IDN": {
       "alias": "IDN",
@@ -209,13 +215,13 @@
       "id": "IDN",
       "index": 9,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": false,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "IDN",
       "notation": "standard",
       "originalId": "IDN",
@@ -247,7 +253,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "OutletCity",
+      "label": "City",
       "notation": "standard",
       "originalId": "OutletCity",
       "sticky": "",
@@ -255,7 +261,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 130
     },
     "Points": {
       "alias": "Points",
@@ -267,7 +273,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "Points",
       "index": 1,
       "isCellEditable": false,
@@ -278,7 +284,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Points",
+      "label": "Score",
       "notation": "standard",
       "originalId": "Points",
       "sticky": "",
@@ -286,7 +292,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 80
     },
     "ReceiptNo": {
       "alias": "ReceiptNo",
@@ -309,7 +315,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "ReceiptNo",
+      "label": "Bill No",
       "notation": "standard",
       "originalId": "ReceiptNo",
       "sticky": "",
@@ -317,7 +323,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 185
     },
     "ServiceDate": {
       "alias": "ServiceDate",
@@ -333,13 +339,13 @@
       "id": "ServiceDate",
       "index": 10,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": false,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "ServiceDate",
       "notation": "standard",
       "originalId": "ServiceDate",
@@ -371,7 +377,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "StoreCode",
+      "label": "Outlet",
       "notation": "standard",
       "originalId": "StoreCode",
       "sticky": "",
@@ -379,19 +385,20 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 95
     },
     "Tier": {
       "alias": "Tier",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const d = Table1.processedTableData || []; return d.length ? d.map(r => ({'T1':'#FCE4E4','T2':'#FDEBD9','T3':'#EFF5E1','T4':'#F1F1F1'}[r['Tier']] || '#FFFFFF')) : '' })()}}",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Tier\"])) : Tier })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "Tier",
       "index": 0,
       "isCellEditable": false,
@@ -402,15 +409,16 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Tier",
+      "label": "Risk",
       "notation": "standard",
       "originalId": "Tier",
       "sticky": "",
+      "textColor": "{{(() => { const d = Table1.processedTableData || []; return d.length ? d.map(r => ({'T1':'#B91C1C','T2':'#B45309','T3':'#4D7C0F','T4':'#555555'}[r['Tier']] || '#231F20')) : '' })()}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 80
     },
     "TrustBand": {
       "alias": "TrustBand",
@@ -422,7 +430,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "TrustBand",
       "index": 6,
       "isCellEditable": false,
@@ -433,7 +441,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "TrustBand",
+      "label": "Data",
       "notation": "standard",
       "originalId": "TrustBand",
       "sticky": "",
@@ -441,7 +449,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 70
     },
     "WhySummary": {
       "alias": "WhySummary",
@@ -457,13 +465,13 @@
       "id": "WhySummary",
       "index": 7,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": false,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "WhySummary",
       "notation": "standard",
       "originalId": "WhySummary",

@@ -1,15 +1,12 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 55,
+  "bottomRow": 60,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#DC2626",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
-    {
-      "key": "buttonColor"
-    },
     {
       "key": "borderRadius"
     }
@@ -29,7 +26,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "lkxt37cy5e",
-  "leftColumn": 27,
+  "leftColumn": 15,
   "minWidth": 120,
   "mobileBottomRow": 60,
   "mobileLeftColumn": 27,
@@ -47,9 +44,9 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 43,
-  "text": "False alarm",
-  "topRow": 51,
+  "rightColumn": 27,
+  "text": "\u2716 False alarm",
+  "topRow": 56,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "84jrwm6za0",

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 50,
+  "bottomRow": 54,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -20,7 +20,7 @@
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
-  "fontStyle": "BOLD",
+  "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
   "key": "jsrzro4er8",
@@ -41,12 +41,12 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 34,
+  "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "{{ Table1.selectedRow.WhySummary }}",
+  "text": "{{ '\ud83d\udccb  AI INVESTIGATION NOTE\\n' + (Table1.selectedRow.AISummary || 'No AI note yet for this bill \u2014 run /rrap-notes to generate one.') + '\\n\\n\ud83d\udd0e  EVIDENCE\\n' + (Table1.selectedRow.WhySummary || '') }}",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
-  "topRow": 45,
+  "textColor": "#374151",
+  "topRow": 42,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
