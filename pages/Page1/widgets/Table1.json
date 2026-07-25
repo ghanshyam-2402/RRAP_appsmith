@@ -199,7 +199,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 190
+      "width": 320
     },
     "IDN": {
       "alias": "IDN",
@@ -261,7 +261,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 130
+      "width": 190
     },
     "Points": {
       "alias": "Points",
@@ -292,7 +292,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 80
+      "width": 95
     },
     "ReceiptNo": {
       "alias": "ReceiptNo",
@@ -323,7 +323,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 185
+      "width": 300
     },
     "ServiceDate": {
       "alias": "ServiceDate",
@@ -385,7 +385,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 95
+      "width": 130
     },
     "Tier": {
       "alias": "Tier",
@@ -418,7 +418,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 80
+      "width": 95
     },
     "TrustBand": {
       "alias": "TrustBand",
@@ -434,13 +434,13 @@
       "id": "TrustBand",
       "index": 6,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": false,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Data",
       "notation": "standard",
       "originalId": "TrustBand",
